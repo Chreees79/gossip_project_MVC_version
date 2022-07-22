@@ -23,6 +23,7 @@ class Routeur
       when 2
         puts "Tu as choisi de voir tous les gossips"
         @controller.index_gossips
+
       when 4
         puts "À bientôt !"
         break
