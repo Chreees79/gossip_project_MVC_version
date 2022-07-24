@@ -14,6 +14,7 @@ attr_reader :author, :content
     end
   end
     
+
   def self.all
     all_gossips = []
     CSV.read("db/gossip.csv").each{|gossip| all_gossips.push(Gossip.new(gossip[0], gossip[1]))}

@@ -1,16 +1,16 @@
 class View
 
   def create_gossip
-    puts "Quel est ton nom ?"
+    puts " " * 35 + "Quel est ton nom ?".yellow
     author = gets.chomp
       if author == ""
-        puts "Veuillez entrer un nom"
+        puts " " * 35 + "Veuillez entrer un nom".red
         create_gossip
       else
-        puts "Quel est le contenu de ton gossip ?"
+        puts " " * 35 + "Quel est le contenu de ton gossip ?".yellow
         content = gets.chomp
         if content == ""
-          puts "Veuillez entrer un contenu"
+          puts " " * 35 + "Veuillez entrer un contenu".red
           create_gossip
         else
           return params = {content: content, author: author}
@@ -19,7 +19,7 @@ class View
   end
 
   def delete_gossip
-    puts "quel numéro de potin veux-tu supprimer ?"
+    puts " " * 35 + "quel numéro de potin veux-tu supprimer ?".yellow
     input = gets.chomp.to_i
     return input
   end
