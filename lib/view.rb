@@ -23,5 +23,4 @@ class View
     input = gets.chomp.to_i
     return input
   end
-
 end

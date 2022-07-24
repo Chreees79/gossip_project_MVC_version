@@ -20,7 +20,7 @@ class Controller
     new_list_gossips = all_gossips
     CSV.open("db/gossip.csv", "w") do |csv|
       new_list_gossips.map! do |gossip|
-        csv << [gossip.author, gossip.content]
+      csv << [gossip.author, gossip.content]
       end
     end
   end
